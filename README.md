@@ -5,6 +5,8 @@ This repository holds two weight-space programming studies on `Qwen/Qwen3.5-0.8B
 - **v1** (agent: Cursor): a rank-1 edit of `layers.23.mlp.down_proj`, fitted on BFCL prompts and activations. Recommended edit: E4b.
 - **v2** (agent: Claude, with the OpenWSP protocol): "neuron programming" in the layer-23 MLP, fitted on practice data only. Recommended edit: v7, two neurons, 6,144 weights.
 
+The v7 model is on Hugging Face: [`mrtpk/Qwen3.5-0.8B-wsp-tool-use`](https://huggingface.co/mrtpk/Qwen3.5-0.8B-wsp-tool-use) (branch `v7`).
+
 Start with the report: [`v2/docs/REPORT.md`](v2/docs/REPORT.md) (both studies). Write-up: [Weight-Space Programming - Teaching Qwen3.5-0.8B when to call a tool](https://github.com/mrtpk/kaizen/tree/master/learnings/20261112_wsp_qwen_tool_use) (kaizen blog).
 
 ## Results (BFCL-V4 overall, web search not run and counted as 0)
@@ -41,10 +43,11 @@ Neither edit is better in both modes. Both results are optimistic: v1 was fitted
 | `env/` | Exact package lists of the two Python environments. |
 | `skills/` | Claude Code skills from this work. Copy a skill folder to `~/.claude/skills/` to use it. |
 | `release/ASSETS.md` | Large files that are GitHub release assets (the raw BFCL generations). |
+| `hf/MODEL_CARD.md`, `tools/upload_hf.py` | The Hugging Face model card of v7, and the script that checks the built v7 against the base and uploads it. |
 
 Not in this repository:
 
-- Model checkpoints. `tools/apply_edit.py` and `v2/eval/build_checkpoint.py` rebuild them from the base model and the edits.
+- Model checkpoints. `tools/apply_edit.py` and `v2/eval/build_checkpoint.py` rebuild them from the base model and the edits. The v7 checkpoint is also on Hugging Face (see above).
 - OpenWSP. `tools/get_openwsp.sh` fetches it at the commit that v2 used.
 - The practice data. `tools/get_practice.sh` downloads it at pinned revisions and checks the hashes.
 - The v2 practice subsets, request files and pass outputs (the files that hold practice-data text). They are withheld until the dataset licences are checked. Without them, v2 levels 5 and the run-1/2 passes need new passes on the GPU.
@@ -107,6 +110,7 @@ Tested on the original machine: all 42 runs give the level-1 numbers, with one e
 
 ### Level 3: rebuild the edited models (minutes, no GPU)
 
+- v7 without a build: download `mrtpk/Qwen3.5-0.8B-wsp-tool-use`, revision `v7`. It is the output of the command below; `tools/upload_hf.py` checked that only the 3 edit tensors differ from the base and that their SHA-256 match `v2/edits/run3-v7/manifest.json`.
 - v2 edits (exact, with hash checks):
   `PYTHONPATH=v2/openwsp/src .venv/bin/python v2/eval/build_checkpoint.py BASE_DIR v2/edits/run3-v7 models/qwen35-wsp7`
 - v1 edits (exact; each changed tensor is checked against its SHA-256):
