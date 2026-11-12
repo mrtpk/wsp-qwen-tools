@@ -1,0 +1,9 @@
+pairs 858
+model p_call: own 0.607  swap 0.194  AUROC 0.862  pair win 0.979
+model p_call>0.5 on swap (false call): 0.111
+ hs BFCL dir->swap AUC pair win swap dir->swap AUC swap dir->BFCL AUC cos(BFCL,swap) swap logreg AUC
+  9              0.503    0.554              0.637              0.442         -0.089           0.894
+ 13              0.707    0.971              0.829              0.737          0.488           0.938
+ 16              0.837    0.987              0.887              0.834          0.704           0.947
+ 20              0.861    0.987              0.883              0.870          0.749           0.943
+ 24              0.884    0.992              0.899              0.884          0.766           0.951

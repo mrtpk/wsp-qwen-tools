@@ -1,0 +1,16 @@
+{
+ "model.language_model.layers.23.mlp.down_proj.weight": {
+  "shape": [
+   1024,
+   3584
+  ],
+  "dtype": "torch.bfloat16",
+  "changed_values": 3535383,
+  "sha256": "7e4b91737a22f45d6226fad389a322c2da94ded9804d526f0be81db79b011a33",
+  "delta_sigma_1_2": [
+   5.127564430236816,
+   0.001929637510329485
+  ],
+  "relative_norm": 0.3122985363006592
+ }
+}

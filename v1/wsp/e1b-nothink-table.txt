@@ -1,0 +1,16 @@
+col | Qwen3.5-0.8B base (nothink FC) | Qwen3.5-0.8B RikiyaT WSP (nothink FC) | qwen35-e1b (nothink FC)
+Overall Acc | 17.63% | 15.66% | 16.73%
+Non-Live AST Acc | 32.65% | 24.31% | 27.65%
+Non-Live Simple AST | 32.08% | 25.75% | 15.58%
+Non-Live Multiple AST | 45.50% | 41.50% | 30.00%
+Non-Live Parallel AST | 21.50% | 9.50% | 24.50%
+Non-Live Parallel Multiple AST | 31.50% | 20.50% | 40.50%
+Live Acc | 44.19% | 36.34% | 29.76%
+Live Simple AST | 39.53% | 35.66% | 16.28%
+Live Multiple AST | 45.87% | 37.23% | 33.05%
+Live Parallel AST | 43.75% | 37.50% | 25.00%
+Live Parallel Multiple AST | 20.83% | 4.17% | 33.33%
+Multi Turn Acc | 3.25% | 1.88% | 2.12%
+Memory Acc | 5.81% | 4.73% | 5.16%
+Relevance Detection | 75.00% | 50.00% | 43.75%
+Irrelevance Detection | 78.11% | 80.90% | 93.18%

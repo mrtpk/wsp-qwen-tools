@@ -1,0 +1,161 @@
+total 365 [('live_multiple', 226), ('live_simple', 51), ('simple_python', 47), ('multiple', 15), ('simple_java', 15), ('simple_javascript', 11)]
+### live_multiple_426-141-15
+  ERR: Invalid value for parameter 'genre': 'Science Fiction'. Expected one of ['Sci-fi']. Case insensitive.
+  MODEL: [{'Movies_1_FindMovies': {'location': 'Hayward, CA', 'genre': 'Science Fiction', 'show_type': 'regular', 'theater_name': 'dontcare'}}]
+  GT: [{'Movies_1_FindMovies': {'location': ['Hayward, CA'], 'theater_name': ['', 'dontcare'], 'genre': ['Sci-fi'], 'show_type': ['regular']}}]
+### live_simple_13-3-9
+  ERR: Invalid value for parameter 'location': 'Shanghai, CA'. Expected one of ['Shanghai, China', '\\u4e0a\\u6d77,\\u4e2d\\u56fd']. Case insensitive.
+  MODEL: [{'get_current_weather': {'location': 'Shanghai, CA', 'unit': 'celsius'}}]
+  GT: [{'get_current_weather': {'location': ['Shanghai, China', '\\u4e0a\\u6d77,\\u4e2d\\u56fd'], 'unit': ['celsius']}}]
+### live_multiple_903-186-0
+  ERR: Invalid value for parameter 'date_of_journey': '2023-04-25'. Expected one of ['04/25/2023']. Case insensitive.
+  MODEL: [{'Trains_1_FindTrains': {'_from': 'Phoenix, AZ', 'to': 'Los Angeles, CA', 'date_of_journey': '2023-04-25', 'number_of_adults': 1}}]
+  GT: [{'Trains_1_FindTrains': {'_from': ['Phoenix, AZ'], 'to': ['Los Angeles, CA'], 'date_of_journey': ['04/25/2023']}}]
+### live_multiple_514-150-2
+  ERR: Invalid value for parameter 'location': 'San Jose'. Expected one of ['San Jose, CA']. Case insensitive.
+  MODEL: [{'Movies_1_FindMovies': {'location': 'San Jose', 'theater_name': 'Century 20', 'genre': 'dontcare', 'show_type': 'regular'}}]
+  GT: [{'Movies_1_FindMovies': {'location': ['San Jose, CA'], 'theater_name': ['Century 20'], 'genre': ['', 'dontcare'], 'show_type': ['regular']}}]
+### live_multiple_542-152-4
+  ERR: Invalid value for parameter 'intent': 'rent'. Expected one of ['buy']. Case insensitive.
+  MODEL: [{'Homes_2_FindHomeByArea': {'area': 'Austin, TX', 'intent': 'rent', 'number_of_beds': 4, 'number_of_baths': 2, 'has_garage': True, 'in_unit_laundry': False}}]
+  GT: [{'Homes_2_FindHomeByArea': {'area': ['Austin, Texas', 'Austin, TX'], 'intent': ['buy'], 'number_of_beds': [3], 'number_of_baths': [2], 'has_garage': [True], 'in_unit_laundry': ['', False]}}]
+### live_multiple_294-130-3
+  ERR: Invalid value for parameter 'where_to': 'Kuala Lumpur'. Expected one of ['Kuala Lumpur, Malaysia']. Case insensitive.
+  MODEL: [{'Hotels_2_SearchHouse': {'where_to': 'Kuala Lumpur', 'rating': 3.8, 'number_of_adults': 1}}]
+  GT: [{'Hotels_2_SearchHouse': {'where_to': ['Kuala Lumpur, Malaysia'], 'has_laundry_service': ['', 'dontcare'], 'number_of_adults': [1], 'rating': [3.8]}}]
+### live_multiple_612-159-5
+  ERR: Invalid value for parameter 'city': 'Los Angeles, LA'. Expected one of ['Los Angeles, CA']. Case insensitive.
+  MODEL: [{'Events_3_FindEvents': {'event_type': 'Music', 'city': 'Los Angeles, LA', 'date': 'dontcare'}}]
+  GT: [{'Events_3_FindEvents': {'event_type': ['Music'], 'city': ['Los Angeles, CA'], 'date': ['', 'dontcare']}}]
+### live_multiple_13-4-5
+  ERR: Invalid value for parameter 'location': 'Big Sur, United States'. Expected one of ['Santa Cruz, USA']. Case insensitive.
+  MODEL: [{'OpenWeatherMap_get_current_weather': {'location': 'Big Sur, United States', 'units': 'metric'}}]
+  GT: [{'OpenWeatherMap.get_current_weather': {'location': ['Santa Cruz, USA'], 'units': ['imperial'], 'api_key': ['', 'YOUR_API_KEY_HERE']}}]
+### live_multiple_179-75-1
+  ERR: Invalid value for parameter 'sort_by': 'Relevance'. Expected one of ['', 'Date']. Case insensitive.
+  MODEL: [{'HNA_NEWS_search': {'keyword': 'artificial intelligence', 'category': 'Technology', 'language': 'en', 'limit': 10, 'sort_by': 'Relevance'}}]
+  GT: [{'HNA_NEWS.search': {'keyword': ['artificial intelligence'], 'category': ['Technology'], 'language': ['', 'en'], 'limit': ['', 10], 'sort_by': ['', 'Date']}}]
+### live_multiple_675-163-0
+  ERR: Invalid value for parameter 'city': 'Ciudad de Mexico'. Expected one of ['Ciudad de Mexico, CDMX', 'Ciudad de Mexico, Mexico']. Case insensitive.
+  MODEL: [{'Weather_1_GetWeather': {'city': 'Ciudad de Mexico', 'date': '2023-05-05'}}]
+  GT: [{'Weather_1_GetWeather': {'city': ['Ciudad de Mexico, CDMX', 'Ciudad de Mexico, Mexico'], 'date': ['2023-05-05']}}]
+### live_simple_237-125-0
+  ERR: Invalid value for parameter 'query': 'Miley Cyrus: Wrecking Ball'. Expected one of ['track:Wrecking Ball artist:Miley Cyrus']. Case insensitive.
+  MODEL: [{'play_spotify_song': {'query': 'Miley Cyrus: Wrecking Ball', 'play': True, 'device_id': 'null'}}]
+  GT: [{'play_spotify_song': {'query': ['track:Wrecking Ball artist:Miley Cyrus'], 'device_id': ['', 'null'], 'play': ['', True]}}]
+### live_multiple_658-162-0
+  ERR: Invalid value for parameter 'date': '2024-03-12'. Expected one of ['2023-03-12']. Case insensitive.
+  MODEL: [{'Events_3_FindEvents': {'event_type': 'Theater', 'city': 'New York, NY', 'date': '2024-03-12'}}]
+  GT: [{'Events_3_FindEvents': {'event_type': ['Theater'], 'city': ['New York, NY'], 'date': ['2023-03-12']}}]
+### live_multiple_295-130-4
+  ERR: Invalid value for parameter 'where_to': 'Las Vegas, NV'. Expected one of ['Los Angeles, CA']. Case insensitive.
+  MODEL: [{'Hotels_2_SearchHouse': {'where_to': 'Las Vegas, NV', 'has_laundry_service': 'True', 'number_of_adults': 2, 'rating': 5}}]
+  GT: [{'Hotels_2_SearchHouse': {'where_to': ['Los Angeles, CA'], 'has_laundry_service': ['', 'dontcare'], 'number_of_adults': ['', 0], 'rating': ['', 0.0]}}]
+### live_multiple_877-183-2
+  ERR: Invalid value for parameter 'category': 'dontcare'. Expected one of ['Museum']. Case insensitive.
+  MODEL: [{'Travel_1_FindAttractions': {'location': 'Paris, FR', 'free_entry': 'True', 'good_for_kids': 'True', 'category': 'dontcare'}}]
+  GT: [{'Travel_1_FindAttractions': {'location': ['Paris, FR'], 'free_entry': ['True'], 'category': ['Museum'], 'good_for_kids': ['True']}}]
+### simple_python_293
+  ERR: Invalid value for parameter 'note_duration': 'eighth'. Expected one of ['quarter']. Case insensitive.
+  MODEL: [{'music_composer_create_mix': {'scale': 'C Major', 'note_duration': 'eighth', 'track_length': 180}}]
+  GT: [{'music_composer.create_mix': {'scale': ['C Major'], 'note_duration': ['quarter'], 'track_length': [180]}}]
+### live_multiple_57-22-4
+  ERR: Invalid value for parameter 'size': 'UK'. Expected one of ['', 'all sizes']. Case insensitive.
+  MODEL: [{'get_product_details': {'product_id': '282828', 'size': 'UK'}}]
+  GT: [{'get_product_details': {'product_id': ['282828'], 'color': ['', 'all colors'], 'size': ['', 'all sizes']}}]
+### live_multiple_239-107-0
+  ERR: Invalid value for parameter 'query': 'Apple products'. Expected one of ['apple']. Case insensitive.
+  MODEL: [{'search_web_tool': {'query': 'Apple products', 'num_results': 10, 'source': 'text'}}]
+  GT: [{'search_web_tool': {'query': ['apple'], 'num_results': ['', 3], 'source': ['', 'text']}}]
+### live_multiple_536-151-12
+  ERR: Invalid value for parameter 'date': '2023-03-09'. Expected one of ['03/09/2023']. Case insensitive.
+  MODEL: [{'Events_3_FindEvents': {'event_type': 'Music', 'city': 'Portland, OR', 'date': '2023-03-09'}}]
+  GT: [{'Events_3_FindEvents': {'event_type': ['Music'], 'city': ['Portland, OR'], 'date': ['03/09/2023']}}]
+### live_multiple_713-165-0
+  ERR: Invalid value for parameter 'where_to': 'London, England'. Expected one of ['London, UK']. Case insensitive.
+  MODEL: [{'Hotels_2_SearchHouse': {'where_to': 'London, England', 'number_of_adults': 1, 'check_in_date': '05/20/2023', 'check_out_date': '06/19/2023', 'has_laundry_service': 'True', 'rating': 3.5}}]
+  GT: [{'Hotels_2_SearchHouse': {'where_to': ['London, UK'], 'has_laundry_service': ['True'], 'number_of_adults': ['', 1], 'rating': ['', 3.0]}}]
+### live_simple_160-95-17
+  ERR: Invalid value for parameter 'unit': 'seconds'. Expected one of ['', 'N/A']. Case insensitive.
+  MODEL: [{'cmd_controller_execute': {'command': 'start microsoft.windows.camera:', 'unit': 'seconds'}}]
+  GT: [{'cmd_controller.execute': {'command': ['start microsoft.windows.camera:'], 'unit': ['', 'N/A']}}]
+### live_simple_98-58-0
+  ERR: Invalid value for parameter 'city': 'Chennai, TN'. Expected one of ['Chennai']. Case insensitive.
+  MODEL: [{'get_weather_by_coordinates': {'city': 'Chennai, TN', 'lat': 13.0827, 'lon': 80.2707}}]
+  GT: [{'get_weather_by_coordinates': {'city': ['Chennai'], 'lat': [13.0827], 'lon': [80.2707]}}]
+### live_multiple_931-191-19
+  ERR: Invalid value for parameter 'sub_district_name': 'Phra Khanong Subdistrict'. Expected one of ['Phra Khanong']. Case insensitive.
+  MODEL: [{'get_service_providers': {'sub_district_name': 'Phra Khanong Subdistrict', 'is_excellent': True, 'job_type': 'cleaning'}}]
+  GT: [{'get_service_providers': {'avg_rating': ['', None], 'province_id': ['', None], 'district_name': ['', None], 'sub_district_name': ['Phra Khanong'], 'start_available_date': ['', None], 'end_available_date': ['', None], 'min_age': ['', None], 'max_age': ['', No
+### live_multiple_494-148-4
+  ERR: Invalid value for parameter 'date': 'null'. Expected one of ['2023-04-15']. Case insensitive.
+  MODEL: [{'Events_3_FindEvents': {'event_type': 'Music', 'city': 'New York, NY', 'date': 'null'}}]
+  GT: [{'Events_3_FindEvents': {'event_type': ['Music'], 'city': ['New York, NY'], 'date': ['2023-04-15']}}]
+### simple_java_14
+  ERR: Invalid value for parameter 'layout': 'java.util.RandomLayout.getInstance()'. Expected one of ['gameLayout']. Case insensitive.
+  MODEL: [{'FunGameBase_onFinish': {'layout': 'java.util.RandomLayout.getInstance()', 'success': 'true'}}]
+  GT: [{'FunGameBase.onFinish': {'layout': ['gameLayout'], 'success': [True]}}]
+### live_multiple_416-141-5
+  ERR: Invalid value for parameter 'genre': 'World'. Expected one of ['', 'dontcare']. Case insensitive.
+  MODEL: [{'Movies_1_FindMovies': {'location': 'Healdsburg, CA', 'genre': 'World', 'show_type': '3d'}}]
+  GT: [{'Movies_1_FindMovies': {'location': ['Healdsburg, CA'], 'theater_name': ['Raven Film Center'], 'genre': ['', 'dontcare'], 'show_type': ['3d']}}]
+### live_multiple_427-141-16
+  ERR: Invalid value for parameter 'location': 'San Jose'. Expected one of ['San Jose, CA']. Case insensitive.
+  MODEL: [{'Movies_1_FindMovies': {'location': 'San Jose', 'theater_name': 'Century 20 Oakridge', 'genre': 'Drama', 'show_type': 'regular'}}]
+  GT: [{'Movies_1_FindMovies': {'location': ['San Jose, CA'], 'theater_name': ['Century 20 Oakridge and XD'], 'genre': ['Drama'], 'show_type': ['', 'dontcare']}}]
+### live_multiple_557-154-3
+  ERR: Invalid value for parameter 'pickup_time': '10:00 AM'. Expected one of ['10:00']. Case insensitive.
+  MODEL: [{'RentalCars_3_GetCarsAvailable': {'city': 'Los Angeles, CA', 'start_date': '2023-04-18', 'pickup_time': '10:00 AM', 'end_date': '2023-04-24'}}]
+  GT: [{'RentalCars_3_GetCarsAvailable': {'city': ['Los Angeles, CA'], 'start_date': ['2023-04-18'], 'pickup_time': ['10:00'], 'end_date': ['2023-04-24'], 'car_type': ['', 'dontcare']}}]
+### live_simple_214-117-6
+  ERR: Invalid value for parameter 'genre': 'Comic'. Expected one of ['Comedy', 'Comedy-drama']. Case insensitive.
+  MODEL: [{'Movies_3_FindMovies': {'directed_by': 'Nitesh Tiwari', 'genre': 'Comic', 'cast': 'dontcare'}}]
+  GT: [{'Movies_3_FindMovies': {'directed_by': ['Nitesh Tiwari'], 'genre': ['Comedy', 'Comedy-drama'], 'cast': ['', 'dontcare']}}]
+### live_multiple_442-144-2
+  ERR: Invalid value for parameter 'city': 'Campbell'. Expected one of ['Campbell, CA']. Case insensitive.
+  MODEL: [{'Services_4_FindProvider': {'city': 'Campbell', 'type': 'Psychologist'}}]
+  GT: [{'Services_4_FindProvider': {'city': ['Campbell, CA'], 'type': ['Psychologist'], 'accepts_insurance': ['', False]}}]
+### live_multiple_820-177-3
+  ERR: Invalid value for parameter 'city': 'New York'. Expected one of ['New York, NY']. Case insensitive.
+  MODEL: [{'Events_3_FindEvents': {'event_type': 'Music', 'city': 'New York', 'date': '2023-03-04'}}]
+  GT: [{'Events_3_FindEvents': {'event_type': ['Music'], 'city': ['New York, NY'], 'date': ['2023-03-04']}}]
+### live_multiple_939-194-1
+  ERR: Invalid value for parameter 'alarm_time': '2024-11-15 23:00:00'. Expected one of ['23:00']. Case insensitive.
+  MODEL: [{'set_alarm': {'alarm_time': '2024-11-15 23:00:00'}}]
+  GT: [{'set_alarm': {'alarm_time': ['23:00'], 'purpose': ['brush my teeth']}}]
+### live_multiple_560-155-0
+  ERR: Invalid value for parameter 'city': 'New York'. Expected one of ['New York, NY']. Case insensitive.
+  MODEL: [{'Events_3_FindEvents': {'event_type': 'Music', 'city': 'New York'}}]
+  GT: [{'Events_3_FindEvents': {'event_type': ['Music'], 'city': ['New York, NY'], 'date': ['', 'any']}}]
+### live_multiple_630-160-10
+  ERR: Invalid value for parameter 'receiver': "Amelia's account". Expected one of ['Amelia']. Case insensitive.
+  MODEL: [{'Payment_1_RequestPayment': {'receiver': "Amelia's account", 'amount': 15500, 'private_visibility': False}}]
+  GT: [{'Payment_1_RequestPayment': {'receiver': ['Amelia'], 'amount': [15500.0], 'private_visibility': ['', False]}}]
+### live_multiple_678-163-3
+  ERR: Invalid value for parameter 'date': '2002-04-02'. Expected one of ['20023-04-2']. Case insensitive.
+  MODEL: [{'Weather_1_GetWeather': {'city': 'Washington D.C.', 'date': '2002-04-02'}}]
+  GT: [{'Weather_1_GetWeather': {'city': ['Washington D.C.'], 'date': ['20023-04-2']}}]
+### simple_javascript_27
+  ERR: Invalid value for parameter 'obj': '{\n  "type": "string",\n  "name": "serviceProvider",\n  "description": "Service provider API key"\n}'. Expected one of ['serviceProvider']. Case insensitive.
+  MODEL: [{'validateReactProp': {'obj': '{\n  "type": "string",\n  "name": "serviceProvider",\n  "description": "Service provider API key"\n}', 'componentName': 'UserProfile'}}]
+  GT: [{'validateReactProp': {'obj': ['serviceProvider'], 'componentName': ['UserProfile']}}]
+### live_multiple_876-183-1
+  ERR: Invalid value for parameter 'free_entry': 'False'. Expected one of ['True']. Case insensitive.
+  MODEL: [{'Travel_1_FindAttractions': {'location': 'Paris, FR', 'good_for_kids': 'True', 'free_entry': 'False'}}]
+  GT: [{'Travel_1_FindAttractions': {'location': ['Paris, FR'], 'free_entry': ['True'], 'category': ['Historical Landmark'], 'good_for_kids': ['True']}}]
+### simple_python_372
+  ERR: Invalid value for parameter 'product': 'Organic Bananas'. Expected one of ['bananas']. Case insensitive.
+  MODEL: [{'whole_foods_find_top_brands': {'product': 'Organic Bananas', 'number': 5, 'organic': True}}]
+  GT: [{'whole_foods.find_top_brands': {'product': ['bananas'], 'number': [5, ''], 'organic': [True]}}]
+### live_simple_64-29-4
+  ERR: Invalid value for parameter 'content': 'Mark the task as complete.'. Expected one of ['go to Goa']. Case insensitive.
+  MODEL: [{'todo': {'content': 'Mark the task as complete.', 'type': 'complete'}}]
+  GT: [{'todo': {'type': ['add'], 'content': ['go to Goa']}}]
+### live_simple_211-117-3
+  ERR: Invalid value for parameter 'directed_by': 'James Corden'. Expected one of ['', 'dontcare']. Case insensitive.
+  MODEL: [{'Movies_3_FindMovies': {'directed_by': 'James Corden', 'genre': 'Comic', 'cast': 'James Corden'}}]
+  GT: [{'Movies_3_FindMovies': {'directed_by': ['', 'dontcare'], 'genre': ['Comedy'], 'cast': ['James Corden']}}]
+### live_simple_25-5-3
+  ERR: Invalid value for parameter 'TheFod': 'GREEN'. Expected one of ['SALAD']. Case insensitive.
+  MODEL: [{'ChaFod': {'TheFod': 'GREEN'}}]
+  GT: [{'ChaFod': {'TheFod': ['SALAD']}}]

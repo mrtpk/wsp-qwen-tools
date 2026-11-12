@@ -1,0 +1,1 @@
+Change the port in config.json to 9000. Keep the other settings.

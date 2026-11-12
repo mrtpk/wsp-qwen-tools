@@ -1,0 +1,12 @@
+== multi_turn_base: E1b passes in both samples and base fails in both: 1; reverse: 1
+   multi_turn_base_123: base (calls, steps, text steps, turns) [(9, 12, 4, 4), (2, 6, 4, 4)] | E1b [(9, 13, 4, 4), (7, 11, 4, 4)]
+== multi_turn_miss_func: E1b passes in both samples and base fails in both: 0; reverse: 0
+== multi_turn_miss_param: E1b passes in both samples and base fails in both: 3; reverse: 1
+   multi_turn_miss_param_109: base (calls, steps, text steps, turns) [(12, 20, 8, 8), (8, 16, 8, 8)] | E1b [(8, 16, 8, 8), (9, 17, 8, 8)]
+   multi_turn_miss_param_139: base (calls, steps, text steps, turns) [(3, 6, 3, 3), (20, 23, 3, 3)] | E1b [(8, 7, 3, 3), (3, 6, 3, 3)]
+   multi_turn_miss_param_142: base (calls, steps, text steps, turns) [(15, 21, 6, 6), (9, 15, 6, 6)] | E1b [(7, 12, 6, 6), (10, 16, 6, 6)]
+== multi_turn_long_context: E1b passes in both samples and base fails in both: 4; reverse: 0
+   multi_turn_long_context_119: base (calls, steps, text steps, turns) [(7, 11, 4, 4), (5, 9, 4, 4)] | E1b [(6, 10, 4, 4), (9, 10, 4, 4)]
+   multi_turn_long_context_123: base (calls, steps, text steps, turns) [(6, 10, 4, 4), (7, 11, 4, 4)] | E1b [(11, 15, 4, 4), (8, 12, 4, 4)]
+   multi_turn_long_context_133: base (calls, steps, text steps, turns) [(4, 6, 2, 2), (2, 4, 2, 2)] | E1b [(4, 6, 2, 2), (5, 7, 2, 2)]
+   multi_turn_long_context_193: base (calls, steps, text steps, turns) [(16, 20, 4, 4), (7, 11, 4, 4)] | E1b [(6, 10, 4, 4), (5, 9, 4, 4)]

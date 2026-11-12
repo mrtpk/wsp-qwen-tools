@@ -1,0 +1,60 @@
+{
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "base_revision": "2fc06364715b967f1860aea9cf38778875588b17",
+  "changed_entries_total": 6140,
+  "changed_tensors": 3,
+  "edit_sha256": "47373e2c63dda1bd38fbf2e49a2ac367217d9c026518995a222033bdc74624b4",
+  "format": "openwsp.edit",
+  "format_version": 1,
+  "payload_sha256": "e574fe65642aa3f4555921026c0a7fa601352d1de91a7454a5eac93f60eece2f",
+  "tensors": [
+    {
+      "base_sha256": "1866748ce87d32cfee34891d2fa393fdfeee77447935f6a31d036e4b80332a48",
+      "changed_columns": 2,
+      "changed_entries": 2047,
+      "changed_rows": 1024,
+      "dtype": "bfloat16",
+      "edited_sha256": "a8d8330cb73bd102ee4ddefb49578b68d6bcb7c2fd9c61c952e55ebd2bf20af4",
+      "form": "sparse",
+      "name": "model.language_model.layers.23.mlp.down_proj.weight",
+      "relative_change": 0.06553793109248408,
+      "shape": [
+        1024,
+        3584
+      ],
+      "submitted_file": "model.language_model.layers.23.mlp.down_proj.weight.npy"
+    },
+    {
+      "base_sha256": "57e66633224761ad56da16da7cc0f476e42decd9df64a64ded4a343b8e87487b",
+      "changed_columns": 1024,
+      "changed_entries": 2047,
+      "changed_rows": 2,
+      "dtype": "bfloat16",
+      "edited_sha256": "bd49fb22e61e6b66c03a6f3e388303f018d9225b239ce0f2727c134aab6aa315",
+      "form": "sparse",
+      "name": "model.language_model.layers.23.mlp.gate_proj.weight",
+      "relative_change": 0.2145431029498502,
+      "shape": [
+        3584,
+        1024
+      ],
+      "submitted_file": "model.language_model.layers.23.mlp.gate_proj.weight.npy"
+    },
+    {
+      "base_sha256": "cb3830f5121ca0cb4b974b7904a382f9555975c2e84c71863e868e434e86aa6f",
+      "changed_columns": 1024,
+      "changed_entries": 2046,
+      "changed_rows": 2,
+      "dtype": "bfloat16",
+      "edited_sha256": "1d8878d413c6b9ccca707af697b4132a29f8e98f2e0c2ffb4a74a58ef61cd9d8",
+      "form": "sparse",
+      "name": "model.language_model.layers.23.mlp.up_proj.weight",
+      "relative_change": 0.032721263736527235,
+      "shape": [
+        3584,
+        1024
+      ],
+      "submitted_file": "model.language_model.layers.23.mlp.up_proj.weight.npy"
+    }
+  ]
+}

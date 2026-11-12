@@ -1,0 +1,23 @@
+logit(p_call): own mean +0.56 sd 1.77; swap mean -2.36 sd 2.16
+corr(own logit, swap logit) over queries: 0.631
+relevance gap (own - swap): mean +2.92 sd 1.73
+var(own) 3.13 = var(swap) 4.67 + var(gap) 2.98 + 2cov -4.52
+defect (own, not called) n=254: swap logit -3.67, gap +2.64
+called (own) n=604: swap logit -1.81, gap +3.04
+  simple_python  own +0.54 swap -2.25 gap +2.79 corr 0.67
+  multiple       own +0.27 swap -3.78 gap +4.05 corr 0.67
+  live_simple    own +0.82 swap -1.42 gap +2.24 corr 0.57
+lowest swap logit (strong 'answer myself' prior):
+  -10.34 gap +8.04 | 'Translate Hello, how are you? from English to French.'
+  -9.83 gap +6.13 | 'Who discovered the neutron? Give me detail information.'
+  -9.73 gap +7.48 | 'What is the density of a substance with a mass of 45 kg and a volume of 15 m³?'
+  -9.70 gap +3.59 | 'What are the three great Schism in Christianity history?'
+  -9.64 gap +2.74 | 'What is the capital of Brazil?'
+  -9.47 gap +5.25 | 'What are the names of proteins found in the plasma membrane?'
+highest swap logit (strong 'call anything' prior):
+  +2.02 gap -0.68 | 'play wrecking ball by Miley Cyrus'
+  +2.06 gap +0.19 | 'Could you tell me the current temperature in Berkeley using latitude 37.8715 and longitude -122.2730?'
+  +2.52 gap -0.37 | 'Can you tell me the current weather in Chennai? I believe the latitude is around 13.0827 and the longitude is '
+  +2.58 gap +0.62 | "请帮我检索一下'红星科技'公司目前所有未解决的工单，我想要查看最多10个。"
+  +3.15 gap -0.56 | '我想在肯德基买10个麦辣鸡腿堡，50杯可口可乐，30个油炸鸡翅，90根薯条'
+  +3.16 gap -0.34 | 'Hi, could you help me check the weather in Washington, DC for March 1st, 2023 please?'

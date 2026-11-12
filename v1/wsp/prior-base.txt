@@ -1,0 +1,7 @@
+ hs R2 swap(te) prior->own corr prior->BFCL need corr prior AUC need cos(prior,rel)
+  9       0.449           0.548 [lambda 0.1]                 0.349          0.543          0.150
+ 13       0.643           0.749 [lambda 0.01]                 0.720          0.780          0.108
+ 16       0.723           0.868 [lambda 0.1]                 0.812          0.819          0.166
+ 20       0.674           0.816 [lambda 0.01]                 0.711          0.761          0.109
+ 22       0.866           0.931 [lambda 1]                 0.874          0.814          0.250
+ 24       0.954           0.953 [lambda 1]                 0.954          0.854          0.252

@@ -1,0 +1,7 @@
+{
+  "host": "0.0.0.0",
+  "port": 9000,
+  "debug": false,
+  "files": ["/work/work/sample", "/work/work/debug", ...]
+}
+

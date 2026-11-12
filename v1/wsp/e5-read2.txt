@@ -1,0 +1,27 @@
+E5 read vector, t_mid 0:0: condition number 70.4
+  think    held-out mean read: need -0.085 over +0.083 refuse +0.187 | AUROC over/need 0.950 | bg mean +0.023 sd 0.196
+  nothink  held-out mean read: need -0.094 over +0.074 refuse +0.167 | AUROC over/need 0.949 | bg mean -0.021 sd 0.201
+  multi-turn fit (even IDs)     step0         n  351 mean read -0.025
+  multi-turn fit (even IDs)     later called  n  821 mean read +0.000
+  multi-turn fit (even IDs)     later stopped n  306 mean read +0.000
+  multi-turn held-out (odd IDs) step0         n  316 mean read -0.027
+  multi-turn held-out (odd IDs) later called  n  691 mean read +0.006
+  multi-turn held-out (odd IDs) later stopped n  272 mean read +0.002
+E5 read vector, t_mid 0.045:0.045: condition number 70.4
+  think    held-out mean read: need -0.089 over +0.087 refuse +0.200 | AUROC over/need 0.949 | bg mean +0.026 sd 0.201
+  nothink  held-out mean read: need -0.095 over +0.078 refuse +0.177 | AUROC over/need 0.946 | bg mean -0.024 sd 0.203
+  multi-turn fit (even IDs)     step0         n  351 mean read -0.016
+  multi-turn fit (even IDs)     later called  n  821 mean read +0.045
+  multi-turn fit (even IDs)     later stopped n  306 mean read +0.045
+  multi-turn held-out (odd IDs) step0         n  316 mean read -0.017
+  multi-turn held-out (odd IDs) later called  n  691 mean read +0.049
+  multi-turn held-out (odd IDs) later stopped n  272 mean read +0.047
+E5 read vector, t_mid 0.03:0.06: condition number 70.4
+  think    held-out mean read: need -0.087 over +0.086 refuse +0.209 | AUROC over/need 0.945 | bg mean +0.026 sd 0.202
+  nothink  held-out mean read: need -0.095 over +0.077 refuse +0.182 | AUROC over/need 0.941 | bg mean -0.024 sd 0.204
+  multi-turn fit (even IDs)     step0         n  351 mean read -0.009
+  multi-turn fit (even IDs)     later called  n  821 mean read +0.030
+  multi-turn fit (even IDs)     later stopped n  306 mean read +0.060
+  multi-turn held-out (odd IDs) step0         n  316 mean read -0.011
+  multi-turn held-out (odd IDs) later called  n  691 mean read +0.035
+  multi-turn held-out (odd IDs) later stopped n  272 mean read +0.061

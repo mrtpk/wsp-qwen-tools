@@ -1,0 +1,6 @@
+base: pass 4/26 = 0.15 | cmds 4.8 cmd_fail 0.30 tool_err 217.6 no_action 0.12 timeout 0.12
+   config_port=0/2 count_lines=0/2 create_add=0/2 csv_total=0/2 find_class=0/2 fix_failing_test=0/2 fix_import=0/2 fix_subtract=1/2 fizzbuzz=0/2 gitignore=0/2 greet_arg=1/1 is_prime=1/1 remove_unused=1/1 rename_func=0/1 reverse_words=0/1 use_math_pi=0/1
+e4b: pass 2/48 = 0.04 | cmds 5.5 cmd_fail 0.43 tool_err 23.0 no_action 0.27 timeout 0.00
+   config_port=0/3 count_lines=0/3 create_add=0/3 csv_total=0/3 find_class=0/3 fix_failing_test=1/3 fix_import=0/3 fix_subtract=0/3 fizzbuzz=0/3 gitignore=0/3 greet_arg=0/3 is_prime=0/3 remove_unused=1/3 rename_func=0/3 reverse_words=0/3 use_math_pi=0/3
+wsp2: pass 3/30 = 0.10 | cmds 4.8 cmd_fail 0.38 tool_err 214.8 no_action 0.23 timeout 0.10
+   config_port=0/2 count_lines=0/2 create_add=1/2 csv_total=0/2 find_class=0/2 fix_failing_test=0/2 fix_import=0/2 fix_subtract=0/2 fizzbuzz=1/2 gitignore=0/2 greet_arg=0/2 is_prime=0/2 remove_unused=1/2 rename_func=0/2 reverse_words=0/1 use_math_pi=0/1

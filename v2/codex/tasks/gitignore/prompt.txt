@@ -1,0 +1,1 @@
+Add a .gitignore file that ignores __pycache__ directories and all .log files.

@@ -1,0 +1,11 @@
+n 3625; sampled called: needs 0.936, irrelevance 0.467
+p_call after </think>: AUROC called 0.980, needs 0.877
+p_call histogram (10 bins): [588, 145, 99, 85, 80, 61, 70, 114, 219, 2164]
+agreement (p>0.5) with sampled called: 0.919
+over-calls (irrelevance, called): 525 of 1124
+ hs logreg need meandiff need NT rel dir -> need NT rel dir -> over vs correct-irr
+  9       0.957         0.872              0.703                             0.680
+ 13       0.966         0.891              0.887                             0.763
+ 16       0.970         0.907              0.909                             0.875
+ 20       0.968         0.901              0.883                             0.877
+ 24       0.967         0.912              0.918                             0.904

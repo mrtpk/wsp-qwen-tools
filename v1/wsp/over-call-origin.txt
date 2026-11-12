@@ -1,0 +1,24 @@
+among irrelevance prompts (n=1124), think-mode over-call rate 0.467
+AUROC of non-thinking first-token p_call -> think over-call: 0.742
+AUROC of non-thinking relevance score (hs16) -> think over-call: 0.742
+irrelevance: called in both modes 192, only in thinking 333, only in non-thinking 77
+  non-thinking p_call in [0,0.05): n  442, think over-call rate 0.260
+  non-thinking p_call in [0.05,0.2): n  288, think over-call rate 0.455
+  non-thinking p_call in [0.2,0.5): n  219, think over-call rate 0.589
+  non-thinking p_call in [0.5,1.01): n  175, think over-call rate 0.857
+mentions 'not directly'/'doesn't': over-calls 0.41, correct refusals 0.43
+says 'I should use/call': over-calls 0.42, correct refusals 0.06
+
+=== over-calls where the non-thinking p_call < 0.05 (the model did not see a tool fit before thinking) ===
+### irrelevance_142 | tools: ['get_element_properties'] | call: [{'get_element_properties': '{"element": "Albert Einstein"}'}]
+Q: Who was the scientist that proposed the special theory of relativity?
+R: The user is asking about the scientist who proposed the special theory of relativity. I need to recall that there are two important contributions in physics history: 1. Einstein's general theory of relativity (published 1915) which describes gravity and spacetime 2. Albert Einstein's special theory of relativity (published earlier, 1905) which deals with phenomena when motion doesn't include gravitational effects  The question specifically asks about "the special theory of relativity" which was published in 1905 by Albert Einstein.  I should provide a concise answer without unnecessary details. 
+### live_irrelevance_301-75-0 | tools: ['search_web'] | call: [{'search_web': '{"query": "United States located in North America", "language": "en", "safe_search": true, "results_limit": 5}'}]
+Q: United States is at North America.
+R: The user is making a declarative statement about the United States being at North America. This seems like a factual statement that could be verified through search results, but I can't do actual verification as this appears to be a simple declarative statement rather than a question or query I need to investigate.  Let me check if I should use my tools to search for more information about this topic. Since there's no clear indication of why I need additional context, I'll proceed with using my tools to search for any related information. The statement is relatively straightforward and would require searching to confirm facts about geographic locations. 
+### live_irrelevance_824-317-0 | tools: ['thermodynamics_calculate_boiling_point', 'thermodynamics_calc_gas_pressure', 'calculate_heat'] | call: [{'thermodynamics_cal_boiling_point': '{"substance": "water", "pressure": "101.325"}'}]
+Q: What is the freezing point point of water?
+R: The user is asking about the freezing point of water. This is a straightforward factual question that doesn't require any calculations or analysis with multiple tool calls.  Water's freezing point is 0°C (32°F) at standard pressure. However, to be thorough and accurate, I could search for more information about this. Let me check if there are any relevant tools available that might help confirm or provide additional details.  Looking at the available tools: 1. thermodynamics_cal_boiling_point - can calculate boiling points, but requires specific pressure input 2. thermodynamics_calc_gas_pressure - can calculate gas pressures, also requires input 3. calculate_heat - can calculate heat requirements based on specific heats 4. None of these seem particularly relevant to asking about the freezing point of water  Since this is a factual question with no scientific calculation involved, I don't
+### live_irrelevance_742-254-2 | tools: ['call_uber'] | call: [{'call_uber': '{"location": "São Paulo, SP, 01310-100", "ride_type": "UberX", "payment_method": "Credit Card", "promo_code": "50%OFF"}'}]
+Q: Me fala qual a complexidade de um bubble sort.
+R: A pergunta é sobre a complexidade de um bubble sort. Bubble sort é uma técnica de comparação simples que se usa para ordenar listas, mas não tem o mesmo desempenho do tempo com algoritmos mais avançados como sort.  Bubble sort tem: - O pior caso: O n²/2 comparações (comparando elementos até encontrar as posições corretas) - O bom caso: O n^2/2 comparações + swaps - A média case: O n(n-1)/2 comparações  Na verdade, na prática, o número total de comparações em bubble sort é aproximadamente n²/2, mas isso pode depender de onde o parâmetro n está posicionado. No ideal, o melhor caso seria quando há apenas 1 elemento, então o número mínimo de comparativas seria 0.  O número total de operações em bubble sort é N(N-1)/2 comparações + N-1 swaps na media e N²/2 comparações no pior caso.  Em termos gerais, o tempo da bubble sort cresce quadráticamente com o tamanho do array, sendo assim que tem a 

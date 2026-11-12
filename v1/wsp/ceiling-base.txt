@@ -1,0 +1,13 @@
+model p_call>0.5: FPR(irrelevance) 0.156  TPR(needs_call) 0.685  AUROC 0.851
+sampled defect cases (needs call, no call): 685; model p_call>0.5 on them: 0.260
+ hs  readout  AUROC  TPR@FPR defect caught
+  9 meandiff  0.793    0.523         0.607
+  9   logreg  0.957    0.936         0.876
+ 13 meandiff  0.891    0.790         0.689
+ 13   logreg  0.974    0.965         0.917
+ 16 meandiff  0.916    0.834         0.685
+ 16   logreg  0.971    0.962         0.907
+ 20 meandiff  0.915    0.833         0.663
+ 20   logreg  0.969    0.959         0.911
+ 24 meandiff  0.917    0.841         0.657
+ 24   logreg  0.972    0.963         0.911

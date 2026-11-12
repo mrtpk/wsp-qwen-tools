@@ -1,0 +1,1 @@
+sales.csv has the columns item and amount. Create total.py that prints the total of the amount column.

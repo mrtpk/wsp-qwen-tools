@@ -1,0 +1,4 @@
+qwen35-e1a system 0.0013 (n 31070) user 0.0058 (n 1386) reasoning 0.0007 (n 10146) action 0.0541 (n 20) call 0.0004 (n 1137) | max 0.566 in action: ' regardless of color.\n</think>\n\n<tool_call>'
+qwen35-e1b system 0.0091 (n 31070) user 0.0334 (n 1386) reasoning 0.0025 (n 10146) action 0.3264 (n 20) call 0.0024 (n 1137) | max 4.024 in system: ' the specified format: an inner <function'
+qwen35-e3k5 system 0.0070 (n 31070) user 0.0791 (n 1386) reasoning 0.0023 (n 10146) action 0.1771 (n 20) call 0.0048 (n 1137) | max 18.861 in system: '", "Sci-fi", "Cult'
+d1671a178705bcab7644806d23c535517f35723b system 0.1341 (n 31070) user 0.0525 (n 1386) reasoning 0.0138 (n 10146) action 0.0108 (n 20) call 0.0073 (n 1137) | max 7.755 in system: " not suitable for children, and 'dont"

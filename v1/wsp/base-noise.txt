@@ -1,0 +1,14 @@
+col | base s1 | base s2 | s2 - s1
+Overall Acc | 20.04 | 20.88 | +0.84
+Non-Live AST Acc | 57.42 | 56.31 | -1.11
+Live Acc | 55.37 | 55.59 | +0.22
+Live Simple AST | 51.16 | 50.00 | -1.16
+Live Multiple AST | 56.89 | 57.17 | +0.28
+Multi Turn Acc | 5.38 | 5.50 | +0.12
+Memory Acc | 10.32 | 14.62 | +4.30
+Memory KV | 10.97 | 9.68 | -1.29
+Memory Vector | 15.48 | 18.06 | +2.58
+Memory Recursive Summarization | 4.52 | 16.13 | +11.61
+Irrelevance Detection | 50.88 | 51.20 | +0.32
+live_simple: base s1 fails 126, s2 fails 129, fail only in s2 34, pass only in s2 31
+live_multiple: base s1 fails 454, s2 fails 451, fail only in s2 120, pass only in s2 123

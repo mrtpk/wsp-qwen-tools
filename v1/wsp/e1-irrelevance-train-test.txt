@@ -1,0 +1,5 @@
+irrelevance rows: train (used to fit v) 562, held-out 562
+qwen35-base-think-FC   irrelevance accuracy: train  53.0  held-out  53.6
+qwen35-wsp-think-FC    irrelevance accuracy: train  59.1  held-out  60.9
+qwen35-e1a-think-FC    irrelevance accuracy: train  62.5  held-out  65.3
+qwen35-e1b-think-FC    irrelevance accuracy: train  68.0  held-out  70.8

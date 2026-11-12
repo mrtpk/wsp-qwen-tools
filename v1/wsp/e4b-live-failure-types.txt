@@ -1,0 +1,34 @@
+== live_simple: failures base 126 e4b 143 | newly failing 35 newly passing 18
+    +15  base   51  e4b   66  value_error:string
+     +4  base    0  e4b    4  ast_decoder:decoder_failed
+     +4  base    4  e4b    8  simple_function_checker:missing_required
+     +2  base    2  e4b    4  type_error:simple
+     +2  base    0  e4b    2  value_error:list_dict_count
+     +1  base    2  e4b    3  value_error:dict_value
+     -1  base   10  e4b    9  value_error:others
+     -1  base   11  e4b   10  value_error:list/tuple
+     -2  base    2  e4b    0  simple_function_checker:wrong_count
+     -3  base   31  e4b   28  TEXT instead of call
+     -4  base    6  e4b    2  value_error:dict_key
+   newly failing, by change: {'same call count (argument or name change)': 32, 'no call now': 3}
+== live_multiple: failures base 454 e4b 475 | newly failing 148 newly passing 127
+     +8  base   20  e4b   28  simple_function_checker:unexpected_param
+     +6  base    1  e4b    7  type_error:simple
+     +5  base    3  e4b    8  ast_decoder:decoder_failed
+     +4  base    5  e4b    9  simple_function_checker:missing_required
+     +3  base   16  e4b   19  TEXT instead of call
+     +3  base   18  e4b   21  simple_function_checker:missing_optional
+     +2  base   22  e4b   24  multiple_function_checker:wrong_count
+     +2  base    0  e4b    2  value_error:dict_value
+     -2  base  226  e4b  224  value_error:string
+     -2  base    2  e4b    0  value_error:dict_key
+     -3  base   66  e4b   63  value_error:others
+     -5  base   72  e4b   67  simple_function_checker:wrong_func_name
+   newly failing, by change: {'same call count (argument or name change)': 131, 'call count changed': 8, 'no call now': 9}
+== live_parallel: failures base 6 e4b 5 | newly failing 1 newly passing 2
+     +1  base    0  e4b    1  parallel_function_checker_no_order:wrong_count
+     -2  base    5  e4b    3  parallel_function_checker_no_order:cannot_find_match
+   newly failing, by change: {'same call count (argument or name change)': 1}
+== live_parallel_multiple: failures base 17 e4b 14 | newly failing 3 newly passing 6
+     -3  base   11  e4b    8  parallel_function_checker_no_order:cannot_find_match
+   newly failing, by change: {'same call count (argument or name change)': 2, 'call count changed': 1}

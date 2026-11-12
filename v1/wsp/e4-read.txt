@@ -1,0 +1,3 @@
+E4 read vector: condition number 35.7, v midpoints think -0.126 nothink -0.154
+  think    held-out mean read: need -0.086 over +0.083 refuse +0.154 | AUROC over/need 0.952 | bg mean +0.020 sd 0.191
+  nothink  held-out mean read: need -0.091 over +0.074 refuse +0.148 | AUROC over/need 0.953 | bg mean -0.019 sd 0.195

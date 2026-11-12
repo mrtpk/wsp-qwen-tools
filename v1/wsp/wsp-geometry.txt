@@ -1,0 +1,16 @@
+layer 15: delta sigma1 1.749 (sigma2 0.0010)
+  cos(u, relevance dir at hs16) = -0.007
+  cos(u, <tool_call>-text readout)   = -0.008
+  cos(u, mean residual at hs16)   = -0.107
+  mean proj of residual on u: needs_call -0.341  irrelevance -0.334
+  cos(relevance dir, readout) at hs16 = +0.104
+  wsp - base residual at hs16: mean norm 0.102, cos(mean change, u) +1.000, mean change on u: needs_call +0.082 irrelevance +0.056
+layer 19: delta sigma1 1.399 (sigma2 0.0009)
+  cos(u, relevance dir at hs20) = +0.006
+  cos(u, <tool_call>-text readout)   = +0.005
+  cos(u, mean residual at hs20)   = -0.185
+  mean proj of residual on u: needs_call -1.068  irrelevance -1.077
+  cos(relevance dir, readout) at hs20 = +0.063
+  wsp - base residual at hs20: mean norm 0.368, cos(mean change, u) -0.218, mean change on u: needs_call +0.006 irrelevance -0.148
+final logit diff <tool_call> - text: base needs +4.048 irr +1.874; wsp needs +3.595 irr +1.670
+mean p_call: base needs 0.631 irr 0.208; wsp needs 0.569 irr 0.181

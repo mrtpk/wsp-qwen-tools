@@ -1,0 +1,19 @@
+model | backend | prereq rows | mean tool calls per prereq row | rows with 0 calls | question rows | mean calls per question row
+qwen35-base-think-FC | kv | 37 | 37.81 | 0 | 155 | 4.93
+qwen35-base-think-FC | vector | 35 | 31.46 | 0 | 155 | 3.05
+qwen35-base-think-FC | rec_sum | 37 | 9.46 | 0 | 155 | 1.06
+qwen35-base-s2-think-FC | kv | 37 | 40.00 | 0 | 155 | 4.56
+qwen35-base-s2-think-FC | vector | 37 | 33.86 | 0 | 155 | 3.32
+qwen35-base-s2-think-FC | rec_sum | 37 | 11.68 | 0 | 155 | 1.30
+qwen35-e1b-think-FC | kv | 37 | 40.73 | 0 | 155 | 3.29
+qwen35-e1b-think-FC | vector | 37 | 30.68 | 0 | 155 | 2.30
+qwen35-e1b-think-FC | rec_sum | 37 | 11.81 | 0 | 155 | 1.02
+qwen35-e1b-s2-think-FC | kv | 37 | 46.89 | 0 | 155 | 3.41
+qwen35-e1b-s2-think-FC | vector | 37 | 32.54 | 0 | 155 | 2.15
+qwen35-e1b-s2-think-FC | rec_sum | 37 | 11.57 | 1 | 155 | 0.90
+qwen35-e4b-think-FC | kv | 37 | 37.49 | 0 | 155 | 4.54
+qwen35-e4b-think-FC | vector | 37 | 33.24 | 0 | 155 | 3.66
+qwen35-e4b-think-FC | rec_sum | 37 | 17.97 | 0 | 155 | 1.17
+qwen35-e4b-s2-think-FC | kv | 37 | 34.32 | 0 | 155 | 4.22
+qwen35-e4b-s2-think-FC | vector | 37 | 29.51 | 0 | 155 | 3.39
+qwen35-e4b-s2-think-FC | rec_sum | 37 | 16.43 | 0 | 155 | 1.41

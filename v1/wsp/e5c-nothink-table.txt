@@ -1,0 +1,10 @@
+measure | base (n=2) | E1b (n=1) | E4b (n=2) | E5c (n=1)
+Overall Acc | 17.68 | 16.73 | 20.29 | 19.72
+Non-Live AST Acc | 33.98 | 27.65 | 49.55 | 45.15
+Live Acc | 43.89 | 29.76 | 46.45 | 46.71
+Live Simple AST | 38.17 | 16.28 | 40.31 | 40.31
+Live Multiple AST | 45.77 | 33.05 | 48.34 | 48.81
+Multi Turn Acc | 3.44 | 2.12 | 3.31 | 2.63
+Memory Acc | 5.48 | 5.16 | 5.16 | 5.38
+Relevance Detection | 71.88 | 43.75 | 53.12 | 62.50
+Irrelevance Detection | 77.72 | 93.18 | 86.66 | 86.70

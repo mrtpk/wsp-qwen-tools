@@ -1,0 +1,5 @@
+needs call   n 2501: observed call rate 0.936 | expected: raw 0.880, top-k/top-p 0.891, +presence penalty 0.919
+irrelevance  n 1124: observed call rate 0.467 | expected: raw 0.358, top-k/top-p 0.367, +presence penalty 0.435
+irrelevance: mean shift from presence penalty +0.068; prompts with shift > 0.1: 308
+irrelevance: expected over-calls without penalty 412, with penalty 489, observed 525
+needs call: expected calls without penalty 2228, with penalty 2297, observed 2342

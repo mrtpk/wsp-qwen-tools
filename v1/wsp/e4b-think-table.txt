@@ -1,0 +1,12 @@
+col | Qwen3.5-0.8B base (think FC) | Qwen3.5-0.8B RikiyaT WSP (think FC) | qwen35-e1b (think FC) | qwen35-e4b (think FC)
+Overall Acc | 20.04% | 19.04% | 22.91% | 21.40%
+Non-Live AST Acc | 57.42% | 42.67% | 57.35% | 59.23%
+Live Acc | 55.37% | 47.67% | 51.74% | 52.85%
+Live Simple AST | 51.16% | 42.64% | 47.29% | 44.57%
+Live Multiple AST | 56.89% | 49.57% | 52.99% | 54.89%
+Multi Turn Acc | 5.38% | 5.38% | 6.75% | 5.63%
+Multi Turn Base | 10.00% | 9.50% | 11.50% | 8.00%
+Multi Turn Long Context | 5.50% | 6.50% | 9.00% | 8.50%
+Memory Acc | 10.32% | 12.04% | 14.41% | 8.60%
+Relevance Detection | 75.00% | 68.75% | 75.00% | 87.50%
+Irrelevance Detection | 50.88% | 59.83% | 70.98% | 67.84%

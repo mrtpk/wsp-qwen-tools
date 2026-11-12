@@ -1,0 +1,21 @@
+.venv/
+__pycache__/
+*.pyc
+.cudart/
+models/
+# OpenWSP is fetched by tools/get_openwsp.sh (upstream commit 8d09276)
+v2/openwsp/
+# release assets (GitHub release, see release/ASSETS.md)
+release/*
+!release/ASSETS.md
+!release/ASSETS.sha256
+# withheld until the licences of the practice datasets are checked:
+# practice-data subsets, request files with practice prompts, pass outputs on them
+v2/cells/**/*.jsonl
+v2/cells/**/req-*.json
+v2/work*/req-*.json
+v2/work*/gen-*.json
+v2/work3/forward/
+v2/work3/imports/
+v2/work/probes_A.pt
+v2/work*/edited/

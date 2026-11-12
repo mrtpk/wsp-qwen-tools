@@ -1,0 +1,7 @@
+model | Memory KV | Memory Vector | Memory Recursive Summarization | Memory Acc
+Qwen3.5-0.8B base (think FC) | 10.97% | 15.48% | 4.52% | 10.32%
+qwen35-base-s2 (think FC) | 9.68% | 18.06% | 16.13% | 14.62%
+qwen35-e1b (think FC) | 7.74% | 23.87% | 11.61% | 14.41%
+qwen35-e1b-s2 (think FC) | 6.45% | 16.77% | 10.32% | 11.18%
+qwen35-e4b (think FC) | 9.68% | 11.61% | 4.52% | 8.60%
+qwen35-e4b-s2 (think FC) | 4.52% | 13.55% | 8.39% | 8.82%

@@ -1,0 +1,11 @@
+called rows 2867: need 2342, over-call 525
+p_call after </think> AUROC need vs over (among called): 0.807
+ hs post-think logreg post-think meandiff pre-think (non-thinking first token) logreg
+  9             0.933               0.773                                       0.925
+ 13             0.944               0.818                                       0.957
+ 16             0.947               0.862                                       0.949
+ 19             0.945               0.865                                       0.952
+ 20             0.945               0.862                                       0.947
+ 21             0.945               0.859                                       0.952
+ 22             0.943               0.863                                       0.952
+ 24             0.944               0.867                                       0.952

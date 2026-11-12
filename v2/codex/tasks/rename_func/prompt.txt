@@ -1,0 +1,1 @@
+Rename the function foo in utils.py to compute_total. Update every caller.

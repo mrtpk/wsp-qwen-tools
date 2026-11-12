@@ -1,0 +1,38 @@
+== live_multiple: failures base 454, e1b 495; newly failing 144, newly passing 103
+    +29  base  226  e1b  255  value_error:string
+    +12  base   20  e1b   32  simple_function_checker:unexpected_param
+     +6  base   66  e1b   72  value_error:others
+     +5  base    1  e1b    6  type_error:simple
+     +3  base    3  e1b    6  value_error:list/tuple
+     +2  base   16  e1b   18  TEXT instead of call
+     +1  base    0  e1b    1  value_error:dict_value
+     +0  base    2  e1b    2  value_error:dict_key
+     -2  base   72  e1b   70  simple_function_checker:wrong_func_name
+     -3  base    3  e1b    0  ast_decoder:decoder_failed
+     -3  base   18  e1b   15  simple_function_checker:missing_optional
+     -4  base    5  e1b    1  simple_function_checker:missing_required
+     -5  base   22  e1b   17  multiple_function_checker:wrong_count
+   NEW FAIL live_multiple_1001-232-0 TEXT instead of call ["Invalid syntax. Failed to decode AST. 'str' object has no attribute 'keys'"]
+   NEW FAIL live_multiple_1013-242-0 value_error:string ["Invalid value for parameter 'filter': 'alpha,beta,gamma'. Expected one of ['']. Case insensitive."]
+   NEW FAIL live_multiple_1014-243-0 simple_function_checker:unexpected_param ["Unexpected parameter: 'restrict_empty_idp_groups'."]
+   NEW FAIL live_multiple_1016-245-0 value_error:others ["Invalid value for parameter 'threshold': 0.05. Expected one of [5.0]."]
+   NEW FAIL live_multiple_1022-251-0 simple_function_checker:wrong_func_name ["Function name 'get_hosts_per_month' not found in model output."]
+== live_simple: failures base 126, e1b 136; newly failing 41, newly passing 31
+    +14  base   31  e1b   45  TEXT instead of call
+     +6  base    2  e1b    8  simple_function_checker:unexpected_param
+     +4  base   10  e1b   14  value_error:others
+     +2  base    1  e1b    3  type_error:nested
+     +1  base    0  e1b    1  value_error:list_dict_count
+     +0  base    2  e1b    2  value_error:dict_value
+     -1  base    4  e1b    3  simple_function_checker:missing_required
+     -1  base    2  e1b    1  simple_function_checker:wrong_count
+     -1  base    2  e1b    1  type_error:simple
+     -1  base    6  e1b    5  value_error:dict_key
+     -3  base   11  e1b    8  value_error:list/tuple
+     -3  base    4  e1b    1  simple_function_checker:missing_optional
+     -7  base   51  e1b   44  value_error:string
+   NEW FAIL live_simple_10-3-6 value_error:string ["Invalid value for parameter 'location': 'Yosemite National Park, CA'. Expected one of ['Mariposa, CA']. Case insensitive."]
+   NEW FAIL live_simple_100-59-1 value_error:others ["Invalid value for parameter 'timeout': 15. Expected one of ['', 30]."]
+   NEW FAIL live_simple_110-67-0 TEXT instead of call ["Invalid syntax. Failed to decode AST. 'str' object has no attribute 'keys'"]
+   NEW FAIL live_simple_113-69-0 value_error:others ["Invalid value for parameter 'location_multiplier': 1.8. Expected one of ['', 1.0]."]
+   NEW FAIL live_simple_118-74-0 value_error:others ["Invalid value for parameter 'time': 'null'. Expected one of ['', None]."]

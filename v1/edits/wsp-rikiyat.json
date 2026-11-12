@@ -1,0 +1,30 @@
+{
+ "model.language_model.layers.15.mlp.down_proj.weight": {
+  "shape": [
+   1024,
+   3584
+  ],
+  "dtype": "torch.bfloat16",
+  "changed_values": 65260,
+  "sha256": "82e2d733ea64feaeb4af93a1e065641d3df98b494a8b7576ef2f52e90fe2ee53",
+  "delta_sigma_1_2": [
+   1.7488821744918823,
+   0.0009874098468571901
+  ],
+  "relative_norm": 0.10635697096586227
+ },
+ "model.language_model.layers.19.mlp.down_proj.weight": {
+  "shape": [
+   1024,
+   3584
+  ],
+  "dtype": "torch.bfloat16",
+  "changed_values": 64928,
+  "sha256": "8ef3c61bc36af113ad58e89dbb0a4a14dcba5a45cb750c15ab515c82ddd12eb2",
+  "delta_sigma_1_2": [
+   1.3987576961517334,
+   0.0009012328810058534
+  ],
+  "relative_norm": 0.08105870336294174
+ }
+}

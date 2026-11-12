@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# Editor command. See backend/wsp.py.
+set -euo pipefail
+V2="$(cd "$(dirname "$0")" && pwd)"
+ROOT="$(dirname "$V2")"
+export OPENWSP_BASE=@BASE@
+export OPENWSP_WORK="${OPENWSP_WORK:-$V2/work}"
+export OPENWSP_PRACTICE="$V2/practice"
+export OPENWSP_PASS_BUDGET="${OPENWSP_PASS_BUDGET:-100}"  # V2-D13
+export PYTHONPATH="$V2/backend:$V2/openwsp/src:$V2/openwsp"
+exec "$ROOT/.venv/bin/python" "$V2/backend/wsp.py" "$@"

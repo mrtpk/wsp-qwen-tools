@@ -1,0 +1,27 @@
+category | model | acc s1 | acc s2 | mean calls per entry | mean steps per entry
+multi_turn_base | base | 10.0 | 10.0 | 12.2 | 15.4
+multi_turn_base | E1b | 11.5 | 12.0 | 10.4 | 13.6
+multi_turn_base | E4b | 8.0 | 9.5 | 13.1 | 16.3
+multi_turn_miss_func | base | 0.5 | 1.0 | 13.9 | 17.8
+multi_turn_miss_func | E1b | 0.5 | 0.5 | 11.3 | 15.3
+multi_turn_miss_func | E4b | 1.0 | 0.5 | 15.0 | 19.1
+multi_turn_miss_param | base | 5.5 | 4.5 | 15.3 | 19.3
+multi_turn_miss_param | E1b | 6.0 | 9.5 | 12.4 | 16.4
+multi_turn_miss_param | E4b | 5.0 | 5.0 | 15.1 | 19.3
+multi_turn_long_context | base | 5.5 | 6.5 | 11.8 | 15.0
+multi_turn_long_context | E1b | 9.0 | 8.5 | 10.2 | 13.4
+multi_turn_long_context | E4b | 8.5 | 5.5 | 12.8 | 16.1
+
+failure types (sum of both samples):
+  multi_turn_base | base | ? 360
+  multi_turn_base | E1b | ? 353
+  multi_turn_base | E4b | ? 365
+  multi_turn_miss_func | base | ? 397
+  multi_turn_miss_func | E1b | ? 398
+  multi_turn_miss_func | E4b | ? 397
+  multi_turn_miss_param | base | ? 380
+  multi_turn_miss_param | E1b | ? 369
+  multi_turn_miss_param | E4b | ? 380
+  multi_turn_long_context | base | ? 376
+  multi_turn_long_context | E1b | ? 365
+  multi_turn_long_context | E4b | ? 372
