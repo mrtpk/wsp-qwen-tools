@@ -1,5 +1,5 @@
 """Count BFCL failures where the model answers in text instead of a tool call."""
-import collections, json, sys
+import json, sys
 from pathlib import Path
 
 CATS = ["simple_python", "simple_java", "simple_javascript", "multiple", "parallel",

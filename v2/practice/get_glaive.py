@@ -1,6 +1,6 @@
 """Download glaiveai/glaive-function-calling-v2 (pinned revision) into practice/raw/."""
 from huggingface_hub import HfApi, hf_hub_download
-import shutil, sys
+import shutil
 repo = "glaiveai/glaive-function-calling-v2"
 info = HfApi().dataset_info(repo)
 print("revision", info.sha, "license", (info.card_data or {}).get("license"))

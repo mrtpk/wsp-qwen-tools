@@ -44,6 +44,6 @@ for mode in ("think", "nothink"):
         print(line)
     print("seeds, overall:")
     for k, names in MODELS.items():
-        got = [val(rows[n.format(m=mode)], "Overall Acc") for n in names if n.format(m=mode) in rows]
-        if got:
-            print(f"  {k:22s} {' / '.join(f'{x:.2f}' for x in got)}" + (f"  (3-seed mean {sum(got) / 3:.2f})" if len(got) == 3 else ""))
+        seeds = [val(rows[n.format(m=mode)], "Overall Acc") for n in names if n.format(m=mode) in rows]
+        if seeds:
+            print(f"  {k:22s} {' / '.join(f'{x:.2f}' for x in seeds)}" + (f"  (3-seed mean {sum(seeds) / 3:.2f})" if len(seeds) == 3 else ""))

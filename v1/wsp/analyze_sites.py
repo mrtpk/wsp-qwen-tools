@@ -9,7 +9,7 @@ import sys
 
 import torch
 
-from analyze_layers import auroc, fit_logreg
+from analyze_layers import auroc
 
 
 def raw_direction(Xtr, ytr, wd=1e-2):

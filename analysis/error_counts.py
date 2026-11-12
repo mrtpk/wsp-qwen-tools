@@ -16,7 +16,7 @@ for sub in ("non_live", "live"):
             continue
         counts = {}
         for k, ds in dirs.items():
-            c = collections.Counter()
+            c: collections.Counter[str] = collections.Counter()
             for d in ds:
                 for line in open(d / sub / fn).read().splitlines()[1:]:
                     c[json.loads(line).get("error_type", "?").split(":")[0]] += 1

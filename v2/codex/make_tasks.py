@@ -3,7 +3,7 @@
 Each task is a small coding job. check.sh runs in the finished work directory; exit 0 = pass.
 The check is not in the work directory, so the agent cannot read it.
 """
-import os, shutil, stat
+import shutil, stat
 from pathlib import Path
 
 T = Path(__file__).parent / "tasks"
