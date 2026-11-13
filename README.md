@@ -141,6 +141,10 @@ QWEN35_EXTRA_MODELS=qwen35-wsp7 v2/eval/gen.sh qwen35-wsp7-think-FC 8301 single_
 
 The v1 scripts in `v1/wsp/` read prompt dumps and activations made from the BFCL generations. The order of the commands is in `v1/docs/REPORT.md`, section 9.
 
+## Licence
+
+The code and the documents of this repository: MIT (`LICENSE`). The edits in `v1/edits/` and `v2/edits/` are changes of the `Qwen/Qwen3.5-0.8B` weights, so they also fall under the licence of that model (Apache-2.0).
+
 ## Licences of third-party material
 
 - `Qwen/Qwen3.5-0.8B`: see its model card. The edits in `v1/edits/` and `v2/edits/` are changes of its weights.
